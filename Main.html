@@ -9,8 +9,12 @@
         <div id="numeroEnPantalla"></div>
         <br>
         <br>
-        <button type="button" id="btnMayor">Mayor</button> 
+        <button type="button" id="btnMayor">Mayor</button> o 
         <button type="button" id="btnMenor">Menor</button>
+        <br>
+        <br>
+        <br>
+        <button onClick="window.location.reload();">Intentar nuevamente</button>
 
     </head>
     <body>
@@ -19,36 +23,30 @@
             var numeroAleatorio = Math.floor(Math.random() * 100);
             document.getElementById("numeroEnPantalla").innerHTML = numeroAleatorio;
 
-            // Acá definis los listeners. Como el navegador interpreta éste código, lo ejecuta (o sea, asigna el listener)
+            /*Botones*/
             document.getElementById("btnMayor").addEventListener("click", botonMayor);
             document.getElementById("btnMenor").addEventListener("click", botonMenor);
 
-            
-            
+            //Funcion de boton mayor.          
             function botonMayor(){
             // Definimos el próximo número
             var nuevoNumero = Math.floor(Math.random() * 100);
             if (numeroAleatorio < nuevoNumero) {
-            // En éste caso, gané, así que le muestro el resultado en pantalla pero bien podrías hacer otra cosa.
             document.getElementById("numeroEnPantalla").innerHTML = "Ganaste, el número era: " + nuevoNumero;
             } else {
             document.getElementById("numeroEnPantalla").innerHTML = "Perdiste, el número era: " + nuevoNumero;            
             }
-            // Y ahora que gané, cómo hago para seguir jugando? :
             }
             
-            
-            
+            //Funcion de boton menor.
             function botonMenor(){
             // Definimos el próximo numero
             var nuevoNumero = Math.floor(Math.random() * 100);
             if (numeroAleatorio > nuevoNumero) {
-            // asdasdasd
             document.getElementById("numeroEnPantalla").innerHTML = "Ganaste, el número era: " + nuevoNumero;
             } else {
             document.getElementById("numeroEnPantalla").innerHTML = "Perdiste, el número era: " + nuevoNumero;
             }
-            // Y ahora que gané, cómo hago para seguir jugando? :
             }
         
         </script>
