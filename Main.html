@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <h1>Juego de mayor o menor</h1>
+        <br>
+        <h3>Adivina si el número que sigue va a ser mayor o menor al que esta en la pantalla</h3>
+        <br>
+        <div id="numeroEnPantalla"></div>
+        <br>
+        <br>
+        <input type="button" value="Mayor" id="btnMayor"> o 
+        <input type="button" value="Menor" id="btnMenor">
+
+    </head>
+    <body>
+        <script>
+            /*numero aleatorio que se muestra en pantalla*/
+            var numeroAleatorio = Math.floor(Math.random() * 100);
+            document.getElementById("numeroEnPantalla").innerHTML = numeroAleatorio;
+
+            //funcion del boton mayor
+            function mas(){
+                var btnMayor;
+                btnMayor=document.getElementById("btnMayor");
+                btnMayor.addEventListener("click", botonMayor)
+            }
+            function botonMayor(){
+                var sumar;
+                //sumar = document.getElementById("numeroEnPantalla");
+                //sumar....;
+            }
+
+            //funcion del boton menor
+            function menos(){
+                var btnMayor;
+                btnMayor=document.getElementById("btnMenor");
+                btnMayor.addEventListener("click", botonMenor)
+            }
+            function botonMenor(){
+                var restar;
+                //restar = document.getElementById("numeroEnPantalla");
+                //restar....;
+            }
+        </script>
+    </body>
+</html> 
