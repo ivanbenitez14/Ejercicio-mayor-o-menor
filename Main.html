@@ -23,19 +23,34 @@
             document.getElementById("btnMayor").addEventListener("click", botonMayor);
             document.getElementById("btnMenor").addEventListener("click", botonMenor);
 
+            
+            
             function botonMayor(){
             // Definimos el próximo número
             var nuevoNumero = Math.floor(Math.random() * 100);
-            if (numeroAleatorio > nuevoNumero) {
+            if (numeroAleatorio < nuevoNumero) {
             // En éste caso, gané, así que le muestro el resultado en pantalla pero bien podrías hacer otra cosa.
-            document.getElementById("numeroEnPantalla").innerHTML = "Ganaste, el número era" + numeroNuevo;
+            document.getElementById("numeroEnPantalla").innerHTML = "Ganaste, el número era: " + nuevoNumero;
             } else {
-            document.getElementById("numeroEnPantalla").innerHTML = "Perdiste, el número era" + numeroNuevo;            
+            document.getElementById("numeroEnPantalla").innerHTML = "Perdiste, el número era: " + nuevoNumero;            
             }
             // Y ahora que gané, cómo hago para seguir jugando? :
             }
+            
+            
+            
             function botonMenor(){
+            // Definimos el próximo numero
+            var nuevoNumero = Math.floor(Math.random() * 100);
+            if (numeroAleatorio > nuevoNumero) {
+            // asdasdasd
+            document.getElementById("numeroEnPantalla").innerHTML = "Ganaste, el número era: " + nuevoNumero;
+            } else {
+            document.getElementById("numeroEnPantalla").innerHTML = "Perdiste, el número era: " + nuevoNumero;
             }
+            // Y ahora que gané, cómo hago para seguir jugando? :
+            }
+        
         </script>
     </body>
 </html> 
