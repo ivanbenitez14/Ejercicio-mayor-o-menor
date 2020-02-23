@@ -1,5 +1,36 @@
 body{
-  font-family: 'Open Sans', sans-serif;
-    font-size:14px;
-  text-align:center;
+  text-align: center;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+h3{
+  font-size: 30px;
+  text-align: center;
+}
+
+#numeroEnPantalla{
+  font-size: 100px;
+  text-align: center;
+}
+
+#btnMayor{
+  font-size: 30px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#btnMenor{
+  font-size: 30px;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#btnRecargar{
+  font-size: 25px;
+  border-radius: 10px;
+  text-align: center;
 }
